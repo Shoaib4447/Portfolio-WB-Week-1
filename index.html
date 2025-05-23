@@ -28,7 +28,7 @@
   <body class="bg-[#1F2937]">
     <!-- Nav -->
     <nav
-      class="py-4 px-6 drop-shadow-lg flex justify-between items-center backdrop-blur-md bg-white/10 text-white sticky top-0 z-10"
+      class="py-4 px-6 drop-shadow-lg flex justify-between items-center backdrop-blur-md bg-white/30 text-white sticky top-0 z-10"
     >
       <div class="flex space-x-5">
         <img
@@ -47,8 +47,9 @@
       <div>
         <ul class="hidden md:block md:flex space-x-5 font-medium">
           <li><a href="#home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Project">Project</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="fa-solid fa-bars block md:hidden text-[20px]"></i>
@@ -63,7 +64,7 @@
       <!-- Left Side: Headline + Tagline + Buttons -->
       <div class="md:w-1/2 text-start md:text-left space-y-6">
         <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-          Hi, I'm Shoaib ur Rehman <br /><span class="text-[#2cb1a5]"
+          Hi, I'm Shoaib ur Rehman <br class="hidden md:block" /><span class="text-[#2cb1a5]"
             >Full Stack</span
           ><br /><span class="text-[#38BDF8]">MERN Developer</span>
         </h1>
@@ -92,15 +93,15 @@
         <img
           src="./asserts/pdp.jpg"
           alt="My image"
-          class="scale-75 md:scale-105 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-white"
+          class="scale-105 md:w-80 md:h-80 object-cover rounded-3xl md:rounded-full shadow-lg md:border-4 md:border-white"
         />
       </div>
     </section>
 
     <!--About -->
-    <section id="About" class="py-10 md:py-24 md:px-28 gap-10">
+    <section id="about" class="py-10  md:py-24 md:px-28 gap-10">
       <h2
-        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-4xl font-extrabold text-center"
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-4xl font-extrabold text-center"
       >
         About me
       </h2>
@@ -109,21 +110,21 @@
           <img
             src="./asserts/pdp.jpg"
             alt="My image"
-            class="scale-75 md:w-80 md:h-80 object-cover rounded-3xl shadow-lg"
+            class="scale-75  md:w-80 md:h-80 object-cover rounded-3xl shadow-lg"
           />
         </div>
         <div
-          class="md:w-1/2 flex flex-col justify-center gap-4 text-white p-10"
+          class="md:w-1/2 flex flex-col justify-center gap-4 text-white p-8"
         >
-          <h3 class="text-teal-500 text-3xl font-bold">
+          <h3 class="text-teal-500 text-2xl md:text-3xl font-bold">
             Hello, I'm Shoaib ur Rehman
           </h3>
-          <p class="break-words">
+          <p class="break-words text-justify md:text-start">
             I'm a passionate full-stack developer with 5+ years of experience
             creating modern web applications. I specialize in React ecosystem
             and building performant, accessible, and user-friendly interfaces.
           </p>
-          <p class="break-words">
+          <p class="break-words text-justify md:text-start">
             My approach combines clean code principles with innovative
             problem-solving. Whether working on complex applications or simple
             websites, I bring the same attention to detail and commitment to
@@ -133,7 +134,7 @@
       </div>
       <!-- skills -->
       <div
-        class="border-2 border-gray-500 rounded-2xl p-5 mx-10 md:p-10 backdrop-blur-md md:space-y-2 drop-shadow-lg"
+        class="border-2 border-gray-500 rounded-2xl p-5 mx-8 md:p-10 backdrop-blur-md md:space-y-2 drop-shadow-lg"
       >
         <h6 class="text-white text-2xl font-bold mb-4">My Skills</h6>
         <div
@@ -149,16 +150,16 @@
 
     <!--Services -->
     <section
-      id="Services"
+      id="services"
       class="py-10 px-6 md:py-24 md:px-28 gap-10 bg-gradient-to-br from-transparent via-[#1b263b] to-[#319DCC]"
     >
       <h3
-        class="text-4xl text-center font-extrabold bg-gradient-to-br from-blue-600 to-cyan-400 text-transparent bg-clip-text mb-4"
+        class="text-3xl md:text-5xl text-center font-extrabold bg-gradient-to-br from-blue-600 to-cyan-400 text-transparent bg-clip-text mb-4"
       >
         My Services
       </h3>
-      <p class="text-center text-xl text-white mb-10">
-        I offer a range of services to help businesses build and <br />
+      <p class="tracking-wider leading-relaxed text-center text-xl text-white mb-10 break-words">
+        I offer a range of services to help businesses build and <br class="hidden md:block"/>
         improve their web presence.
       </p>
       <!-- Cards 1-->
@@ -236,15 +237,15 @@
       id="projects"
       class="py-10 px-6 md:py-24 md:px-28 bg-[#19354B] text-white"
     >
-      <h4 class="text-5xl text-center text-blue-400 font-bold leading-relaxed">
+      <h4 class="text-3xl md:text-5xl text-center text-blue-400 font-bold leading-relaxed">
         Featured Projects
       </h4>
-      <p class="text-center font-medium text-lg mt-3">
-        A collection of projects that showcase my skills and <br />
+      <p class="text-center text-xl mt-3">
+        A collection of projects that showcase my skills and <br class="hidden md:block"/>
         experience in web development.
       </p>
       <!-- Filter Buttons -->
-      <div class="flex justify-center mt-5 space-x-3">
+      <div class="flex justify-center flex-wrap mt-5 space-x-3 gap-3">
         <button
           class="capitalize bg-gradient-to-r from-indigo-600 to-cyan-400 hover:from-cyan-400 hover:to-indigo-400 px-6 py-2 rounded-xl hover:bg-blue-600 active"
         >
@@ -268,20 +269,20 @@
       </div>
       <!-- Projects -->
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 text-black"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 text-black mt-5"
       >
         <!-- PROJECT-1 -->
-        <div class="bg-[#214F] rounded-lg shadow-md p-6 shadow-xl text-white">
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
           <!-- Card Image -->
           <img
-            class="w-full h-48 object-cover rounded"
-            src="./asserts/Monetzo.png"
+            class="w-full h-48 object-scale-down rounded object-center"
+            src="./asserts/Monetzo hero.png"
             alt="Card image"
           />
           <!-- Card Content -->
           <div class="space-y-2 mt-4">
             <h2 class="text-2xl font-bold">Monetzo Platform</h2>
-            <p>
+            <p class="break-words text-sm">
               Full-stack portfolio builder for creators to showcase, sell
               digital products, and receive payments online.
             </p>
@@ -294,21 +295,21 @@
               View Project
             </button>
           </div>
-        </div>
+        </div>  
         <!-- PROJECT-2 -->
-        <div class="bg-[#214F] rounded-lg shadow-md p-6 shadow-xl text-white">
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out  antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
           <!-- Card Image -->
           <img
-            class="w-full h-48 object-cover rounded"
-            src="./asserts/Taxi App.png"
+            class="w-full h-48 object-scale-down rounded object-center"
+            src="./asserts/qic co HERO.png"
             alt="Card image"
           />
           <!-- Card Content -->
           <div class="space-y-2 mt-4">
             <h2 class="text-2xl font-bold">Taxi Booking App</h2>
-            <p>
-              Frontend of a clean taxi app with responsive layout, ride
-              selection, and search-based booking interface.
+            <p class="break-words text-sm">
+              Frontend of a clean taxi app with <br> responsive layout, ride
+              selection, and search-based booking.
             </p>
           </div>
           <!-- footer -->
@@ -321,17 +322,17 @@
           </div>
         </div>
         <!-- PROJECT-3 -->
-        <div class="bg-[#214F] rounded-lg shadow-md p-6 shadow-xl text-white">
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
           <!-- Card Image -->
           <img
-            class="w-full h-48 object-cover rounded"
-            src="./asserts/resturant.png"
+            class="w-full object-scale-down rounded object-center"
+            src="./asserts/resturant HERO.png"
             alt="Card image"
           />
           <!-- Card Content -->
           <div class="space-y-2 mt-4">
             <h2 class="text-2xl font-bold">Restaurant Website</h2>
-            <p>
+            <p class="break-words text-sm">
               Modern UI for a local restaurant with responsive design, menu
               filter, and smooth scrolling effects.
             </p>
@@ -350,12 +351,12 @@
     <!-- Testimonials -->
     <section id="testimonials" class="py-10 px-6 md:py-24 md:px-28 text-white">
       <h4
-        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-5xl font-extrabold text-center"
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-5xl font-extrabold text-center"
       >
         What Clients Says
       </h4>
-      <p class="text-center font-medium text-lg mt-3">
-        Don't just take my word for it - here's what people I've <br />
+      <p class="text-center  text-xl mt-3">
+        Don't just take my word for it - here's what people I've <br class="hidden md:block"/>
         worked with have to say.
       </p>
 
@@ -446,18 +447,18 @@
     <!--contact -->
     <section id="contact" class="py-10 px-6 md:py-24 md:px-28 text-white">
       <h4
-        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-5xl font-extrabold text-center"
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-5xl font-extrabold text-center"
       >
         Get In Touch
       </h4>
-      <p class="text-center font-medium text-lg mt-3">
-        Have a project in mind or want to discuss potential <br />
+      <p class="text-center text-lg mt-3">
+        Have a project in mind or want to discuss potential <br class="hidden md:block"/>
         opportunities? Feel free to reach out to me!
       </p>
 
       <!-- Contact Details -->
-      <div class="md:flex gap-10 mt-8">
-        <div class="w-full md:w-1/3 p-10 border border-gray-700 rounded-2xl">
+      <div class="md:flex gap-10 mt-8 ">
+        <div class="w-full md:w-1/3 p-10 border-2 border-gray-700 rounded-2xl drop-shadow-xl">
           <h4 class="font-bold text-2xl">Contact Information</h4>
           <!-- Icon List 1-->
           <div class="flex mt-5 items-center">
@@ -512,29 +513,53 @@
             <a href=""><i class="fa-brands fa-twitter text-xl"></i></a>
           </div>
         </div>
-        <div class="w-full md:w-2/3 p-10 border border-gray-700 rounded-2xl">
+        <div class="w-full md:w-2/3 p-5 md:p-10 border-2 border-gray-700 rounded-2xl drop-shadow-xl mt-8 md:mt-0">
           <h4 class="font-bold text-2xl">Send a Message</h4>
           <!-- form -->
-          <form class="space-y-4">
-            <div>
-              <label for="username" class="block">Name</label>
-              <input type="text" id="username" name="username" placeholder="Your name"/>
+          <form class="space-y-10">
+            <div class="grid md:grid-cols-2 gap-4 py-5">
+              <div class="">
+                <label for="username" class="text-gray-200">Name</label>
+                <input
+                  class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label for="email" class="text-gray-200">Email</label>
+                <input
+                class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                />
+              </div>
             </div>
             <div>
-              <label for="email" class="block">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email">
+              <label for="subject" class="text-gray-200">Subject</label>
+              <input
+              class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Message subject"
+              />
             </div>
             <div>
-              <label for="subject" class="block">Subject</label>
-              <input type="text" name="subject" id="subject" placeholder="Message subject">
-            </div>
+              <label for="message" class="text-gray-200">Message</label>
             <textarea
+            class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
               name="message"
               rows="4"
               cols="50"
               placeholder="Enter your message"
             ></textarea>
-            <button type="submit">Submit</button>
+            </div>
+            <button class="w-full bg-gradient-to-r from-indigo-600 to-cyan-400 hover:from-cyan-400 hover:to-indigo-400 px-6 py-2 rounded-full hover:bg-blue-600" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -585,3 +610,6 @@
     </section>
   </body>
 </html>
+
+
+
