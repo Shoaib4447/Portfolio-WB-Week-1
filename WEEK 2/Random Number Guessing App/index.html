@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-200 to-indigo-200 min-h-screen flex items-center justify-center p-6"
+  >
+    <div
+      class="bg-white shadow-2xl rounded-xl max-w-md w-full p-8 text-center space-y-6"
+    >
+      <h1 class="text-3xl font-bold text-indigo-600">🎯 Guess the Number</h1>
+      <p class="text-gray-600">
+        I'm thinking of a number between <strong>1</strong> and
+        <strong>100</strong>. Can you guess it?
+      </p>
+
+      <input
+        id="guess-input"
+        type="number"
+        placeholder="Enter your guess..."
+        class="w-full border border-gray-300 rounded px-4 py-2 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      />
+
+      <button
+        id="check-btn"
+        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded text-lg font-semibold transition"
+      >
+        Check
+      </button>
+
+      <div id="feedback" class="text-lg font-medium text-gray-800"></div>
+
+      <p class="text-sm text-gray-500">
+        Attempts Left: <span id="attempts" class="font-semibold">5</span>
+      </p>
+
+      <button
+        id="reset-btn"
+        class="mt-4 w-full bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded text-sm font-semibold hidden"
+      >
+        Play Again
+      </button>
+    </div>
+
+    <!-- Script -->
+    <script src="./app.js"></script>
+  </body>
+</html>

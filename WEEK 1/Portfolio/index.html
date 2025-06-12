@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Tailwind  CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Styles -->
+    <style>
+      #skills span {
+        border: 1px solid rgba(220, 220, 220, 0.447);
+        padding: 5px 15px;
+        border-radius: 30px;
+        background-color: rgba(61, 73, 139, 0.282);
+        cursor: pointer;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body class="bg-[#1F2937]">
+    <!-- Nav -->
+    <nav
+      class="py-4 px-6 drop-shadow-lg flex justify-between items-center backdrop-blur-md bg-white/30 text-white sticky top-0 z-10"
+    >
+      <div class="flex space-x-5">
+        <img
+          class="object-cover"
+          width="30px"
+          height="10"
+          src="./asserts/logoipsum-365.svg"
+          alt="BHATTI GAMING"
+        />
+        <p
+          class="font-bold text-[20px] md-text-[30px] leading-tight bg-gradient-to-r from-[#369ED1] to-[#2CB1A5] text-transparent bg-clip-text"
+        >
+          Shoaib ur Rehman
+        </p>
+      </div>
+      <div>
+        <ul class="hidden md:block md:flex space-x-5 font-medium">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars block md:hidden text-[20px]"></i>
+      </div>
+    </nav>
+
+    <!--Hero -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col flex-col-reverse md:flex-row items-center justify-between py-10 px-6 gap-10 text-white bg-gradient-to-br from-transparent via-[#1b263b] to-[#319DCC]"
+    >
+      <!-- Left Side: Headline + Tagline + Buttons -->
+      <div class="md:w-1/2 text-start md:text-left space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Hi, I'm Shoaib ur Rehman <br class="hidden md:block" /><span class="text-[#2cb1a5]"
+            >Full Stack</span
+          ><br /><span class="text-[#38BDF8]">MERN Developer</span>
+        </h1>
+        <p class="">
+          Turning ideas into beautiful, pixel-perfect,
+          <span class="text-sky-300 font-semibold"
+            >responsive experiences.</span
+          >
+        </p>
+        <div class="flex justify-center md:justify-start gap-4">
+          <button
+            class="bg-gradient-to-r from-indigo-600 to-cyan-400 hover:from-cyan-400 hover:to-indigo-400 px-6 py-2 rounded-full hover:bg-blue-600"
+          >
+            View My Work
+          </button>
+          <button
+            class="bg-[#151832] border border-teal-500 text-teal-500 px-6 py-2 rounded-full hover:bg-teal-500 hover:text-white transition font-semibold"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="md:w-1/2 flex justify-center">
+        <img
+          src="./asserts/pdp.jpg"
+          alt="My image"
+          class="scale-105 md:w-80 md:h-80 object-cover rounded-3xl md:rounded-full shadow-lg md:border-4 md:border-white"
+        />
+      </div>
+    </section>
+
+    <!--About -->
+    <section id="about" class="py-10  md:py-24 md:px-28 gap-10">
+      <h2
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-4xl font-extrabold text-center"
+      >
+        About me
+      </h2>
+      <div class="container mx-auto md:flex">
+        <div class="md:w-1/3 flex justify-end">
+          <img
+            src="./asserts/pdp.jpg"
+            alt="My image"
+            class="scale-75  md:w-80 md:h-80 object-cover rounded-3xl shadow-lg"
+          />
+        </div>
+        <div
+          class="md:w-1/2 flex flex-col justify-center gap-4 text-white p-8"
+        >
+          <h3 class="text-teal-500 text-2xl md:text-3xl font-bold">
+            Hello, I'm Shoaib ur Rehman
+          </h3>
+          <p class="break-words text-justify md:text-start">
+            I'm a passionate full-stack developer with 5+ years of experience
+            creating modern web applications. I specialize in React ecosystem
+            and building performant, accessible, and user-friendly interfaces.
+          </p>
+          <p class="break-words text-justify md:text-start">
+            My approach combines clean code principles with innovative
+            problem-solving. Whether working on complex applications or simple
+            websites, I bring the same attention to detail and commitment to
+            excellence to every project.
+          </p>
+        </div>
+      </div>
+      <!-- skills -->
+      <div
+        class="border-2 border-gray-500 rounded-2xl p-5 mx-8 md:p-10 backdrop-blur-md md:space-y-2 drop-shadow-lg"
+      >
+        <h6 class="text-white text-2xl font-bold mb-4">My Skills</h6>
+        <div
+          id="skills"
+          class="flex flex-wrap justify-start py-2 gap-4 text-blue-400 font-semibold"
+        >
+          <span>React</span><span>Typescript</span><span>Next.js</span
+          ><span>Express.js</span> <span>Node.js</span><span>MongoDB</span
+          ><span>Redux</span><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!--Services -->
+    <section
+      id="services"
+      class="py-10 px-6 md:py-24 md:px-28 gap-10 bg-gradient-to-br from-transparent via-[#1b263b] to-[#319DCC]"
+    >
+      <h3
+        class="text-3xl md:text-5xl text-center font-extrabold bg-gradient-to-br from-blue-600 to-cyan-400 text-transparent bg-clip-text mb-4"
+      >
+        My Services
+      </h3>
+      <p class="tracking-wider leading-relaxed text-center text-xl text-white mb-10 break-words">
+        I offer a range of services to help businesses build and <br class="hidden md:block"/>
+        improve their web presence.
+      </p>
+      <!-- Cards 1-->
+      <div class="flex flex-wrap justify-center text-white text-lg gap-6 my-4">
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-code text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">React Application</h4>
+          <p>
+            Modern, scalable front-end applications built with React, Redux, and
+            the latest JavaScript features.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-database text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">Full-Stack Development</h4>
+          <p>
+            End-to-end solutions with seamless frontend and backend integration
+            using Node.js, Express, and MongoDB.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-web-awesome text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">UI/UX Implementation</h4>
+          <p>
+            Pixel-perfect translation of designs into responsive, accessible web
+            interfaces with attention to detail.
+          </p>
+        </div>
+        <!-- 4 -->
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-chart-simple text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">Web Performance</h4>
+          <p>
+            Optimization of load times, rendering performance, and overall user
+            experience through modern techniques.
+          </p>
+        </div>
+        <!-- 5 -->
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-mobile text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">Responsive Websites</h4>
+          <p>
+            Mobile-first approach ensuring your site looks great on all devices
+            from smartphones to large desktops.
+          </p>
+        </div>
+        <!-- 6 -->
+        <div
+          class="w-full sm:w-[45%] md:w-[30%] flex justify-center items-start flex-col gap-4 border border-gray-500 p-8 rounded-2xl hover:shadow-[0_0_10px_#2dd4bf] transition duration-300 ease-in-out p-6 bg-[#1b263b] hover:scale-105 hover:border-teal-500"
+        >
+          <i class="fa-solid fa-tape text-teal-500 text-[30px]"></i>
+          <h4 class="text-white font-bold">API Development</h4>
+          <p>
+            Custom RESTful or GraphQL APIs built with scalability and
+            performance in mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="py-10 px-6 md:py-24 md:px-28 bg-[#19354B] text-white"
+    >
+      <h4 class="text-3xl md:text-5xl text-center text-blue-400 font-bold leading-relaxed">
+        Featured Projects
+      </h4>
+      <p class="text-center text-xl mt-3">
+        A collection of projects that showcase my skills and <br class="hidden md:block"/>
+        experience in web development.
+      </p>
+      <!-- Filter Buttons -->
+      <div class="flex justify-center flex-wrap mt-5 space-x-3 gap-3">
+        <button
+          class="capitalize bg-gradient-to-r from-indigo-600 to-cyan-400 hover:from-cyan-400 hover:to-indigo-400 px-6 py-2 rounded-xl hover:bg-blue-600 active"
+        >
+          All
+        </button>
+        <button
+          class="capitalize bg-[#151832] border border-gray-400 text-gray-400 px-6 py-2 rounded-xl hover:border-teal-500 hover:bg-gray-700 hover:text-teal-500 transition font-semibold"
+        >
+          Frontend
+        </button>
+        <button
+          class="capitalize bg-[#151832] border border-gray-400 text-gray-400 px-6 py-2 rounded-xl hover:border-teal-500 hover:bg-gray-700 hover:text-teal-500 transition font-semibold"
+        >
+          backend
+        </button>
+        <button
+          class="capitalize bg-[#151832] border border-gray-400 text-gray-400 px-6 py-2 rounded-xl hover:border-teal-500 hover:bg-gray-700 hover:text-teal-500 transition font-semibold"
+        >
+          fullstack
+        </button>
+      </div>
+      <!-- Projects -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 text-black mt-5"
+      >
+        <!-- PROJECT-1 -->
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
+          <!-- Card Image -->
+          <img
+            class="w-full h-48 object-scale-down rounded object-center"
+            src="./asserts/Monetzo hero.png"
+            alt="Card image"
+          />
+          <!-- Card Content -->
+          <div class="space-y-2 mt-4">
+            <h2 class="text-2xl font-bold">Monetzo Platform</h2>
+            <p class="break-words text-sm">
+              Full-stack portfolio builder for creators to showcase, sell
+              digital products, and receive payments online.
+            </p>
+          </div>
+          <!-- footer -->
+          <div class="mt-4">
+            <button
+              class="bg-[#151832] border border-teal-500 text-teal-500 px-6 py-2 rounded hover:bg-teal-500 hover:text-white transition font-semibold"
+            >
+              View Project
+            </button>
+          </div>
+        </div>  
+        <!-- PROJECT-2 -->
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out  antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
+          <!-- Card Image -->
+          <img
+            class="w-full h-48 object-scale-down rounded object-center"
+            src="./asserts/qic co HERO.png"
+            alt="Card image"
+          />
+          <!-- Card Content -->
+          <div class="space-y-2 mt-4">
+            <h2 class="text-2xl font-bold">Taxi Booking App</h2>
+            <p class="break-words text-sm">
+              Frontend of a clean taxi app with <br> responsive layout, ride
+              selection, and search-based booking.
+            </p>
+          </div>
+          <!-- footer -->
+          <div class="mt-4">
+            <button
+              class="bg-[#151832] border border-teal-500 text-teal-500 px-6 py-2 rounded hover:bg-teal-500 hover:text-white transition font-semibold"
+            >
+              View Project
+            </button>
+          </div>
+        </div>
+        <!-- PROJECT-3 -->
+        <div class="bg-gray-900 rounded-lg shadow-md p-6 shadow-xl text-white hover:border-2 border-teal-500 transition duration-300 ease-in-out antialiased  backdrop-blur-md hover:scale-105 hover:shadow-[0_0_20px_#2C7398]">
+          <!-- Card Image -->
+          <img
+            class="w-full object-scale-down rounded object-center"
+            src="./asserts/resturant HERO.png"
+            alt="Card image"
+          />
+          <!-- Card Content -->
+          <div class="space-y-2 mt-4">
+            <h2 class="text-2xl font-bold">Restaurant Website</h2>
+            <p class="break-words text-sm">
+              Modern UI for a local restaurant with responsive design, menu
+              filter, and smooth scrolling effects.
+            </p>
+          </div>
+          <!-- footer -->
+          <div class="mt-4">
+            <button
+              class="bg-[#151832] border border-teal-500 text-teal-500 px-6 py-2 rounded hover:bg-teal-500 hover:text-white transition font-semibold"
+            >
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-10 px-6 md:py-24 md:px-28 text-white">
+      <h4
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-5xl font-extrabold text-center"
+      >
+        What Clients Says
+      </h4>
+      <p class="text-center  text-xl mt-3">
+        Don't just take my word for it - here's what people I've <br class="hidden md:block"/>
+        worked with have to say.
+      </p>
+
+      <!-- Testimonial Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <!-- Card-1 -->
+        <div
+          class="border-2 border-gray-700 p-10 rounded-3xl bg-gray-800 hover:shadow-[0_0_10px_#2C7398] transition duration-300 ease-in-out bg-[#1b263b] hover:scale-105 hover:border-blue-300"
+        >
+          <p class="leading-relaxed font-semibold italic">
+            "Working with this developer was a game-changer for our project.
+            Their technical expertise combined with great communication made the
+            entire process smooth and successful."
+          </p>
+
+          <div class="flex mt-5 items-center">
+            <div>
+              <img
+                class="object-cover w-16"
+                src="./asserts/client 2.png"
+                alt="client image"
+              />
+            </div>
+            <div class="ml-5">
+              <h5 class="font-bold">Sarah Johnson</h5>
+              <p class="leading-tight text-xs font-semibold">
+                Product Manager at TechCorp
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div
+          class="border-2 border-gray-700 p-10 rounded-3xl bg-gray-800 hover:shadow-[0_0_10px_#2C7398] transition duration-300 ease-in-out bg-[#1b263b] hover:scale-105 hover:border-blue-300"
+        >
+          <p class="leading-relaxed font-semibold italic">
+            "I was impressed by the attention to detail and problem-solving
+            skills. Not only was the code clean and well-documented, but they
+            also suggested improvements we hadn't even considered."
+          </p>
+
+          <div class="flex mt-5 items-center">
+            <div>
+              <img
+                class="object-cover w-16"
+                src="./asserts/client 2.png"
+                alt="client image"
+              />
+            </div>
+            <div class="ml-5">
+              <h5 class="font-bold">Alex Chen</h5>
+              <p class="leading-tight text-xs font-semibold">
+                Founder of StartupX
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card-3 -->
+        <div
+          class="border-2 border-gray-700 p-10 rounded-3xl bg-gray-800 hover:shadow-[0_0_10px_#2C7398] transition duration-300 ease-in-out bg-[#1b263b] hover:scale-105 hover:border-blue-300"
+        >
+          <p class="leading-relaxed font-semibold italic">
+            "We hired this developer for a complex React application, and they
+            delivered beyond our expectations. The app was fast, responsive, and
+            exactly what we needed."
+          </p>
+
+          <div class="flex mt-5 items-center">
+            <div>
+              <img
+                class="object-cover w-16"
+                src="./asserts/client 2.png"
+                alt="client image"
+              />
+            </div>
+            <div class="ml-5">
+              <h5 class="font-bold">Michael Rodriguez</h5>
+              <p class="leading-tight text-xs font-semibold">
+                CTO at InnovateLabs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid end -->
+      </div>
+    </section>
+    <!--contact -->
+    <section id="contact" class="py-10 px-6 md:py-24 md:px-28 text-white">
+      <h4
+        class="bg-gradient-to-b from-teal-400 to-blue-500 text-transparent bg-clip-text text-3xl md:text-5xl font-extrabold text-center"
+      >
+        Get In Touch
+      </h4>
+      <p class="text-center text-lg mt-3">
+        Have a project in mind or want to discuss potential <br class="hidden md:block"/>
+        opportunities? Feel free to reach out to me!
+      </p>
+
+      <!-- Contact Details -->
+      <div class="md:flex gap-10 mt-8 ">
+        <div class="w-full md:w-1/3 p-10 border-2 border-gray-700 rounded-2xl drop-shadow-xl">
+          <h4 class="font-bold text-2xl">Contact Information</h4>
+          <!-- Icon List 1-->
+          <div class="flex mt-5 items-center">
+            <div
+              class="rounded-full bg-teal-900 bg-opacity-40 shadow-lg h-10 w-10 flex items-center justify-center"
+            >
+              <i class="fa-solid fa-envelope text-white text-sm"></i>
+            </div>
+
+            <div class="ml-5">
+              <h5 class="font-bold">Email</h5>
+              <p class="leading-tight text-sm font-semibold text-gray-400">
+                shoaib@example.com
+              </p>
+            </div>
+          </div>
+          <!-- Icon List 2-->
+          <div class="flex mt-5 items-center">
+            <div
+              class="rounded-full bg-teal-900 bg-opacity-40 shadow-lg h-10 w-10 flex items-center justify-center"
+            >
+              <i class="fa-solid fa-phone text-white text-sm"></i>
+            </div>
+            <div class="ml-5">
+              <h5 class="font-bold">Phone</h5>
+              <p class="leading-tight text-sm font-semibold text-gray-400">
+                +1 (123) 456-7890
+              </p>
+            </div>
+          </div>
+          <!-- Icon List 3-->
+          <div class="flex mt-5 items-center">
+            <div
+              class="rounded-full bg-teal-900 bg-opacity-40 shadow-lg h-10 w-10 flex items-center justify-center"
+            >
+              <i class="fa-solid fa-location-dot text-white text-sm"></i>
+            </div>
+            <div class="ml-5">
+              <h5 class="font-bold">Location</h5>
+              <p class="leading-tight text-sm font-semibold text-gray-400">
+                City, Country
+              </p>
+            </div>
+          </div>
+
+          <!-- horizontal row -->
+          <hr class="text-gray-100 text-opacity-20 mt-24" />
+          <h4 class="text-xl font-semibold mt-3">Follow me</h4>
+          <div class="flex gap-10 mt-4">
+            <a href=""><i class="fa-brands fa-github text-xl"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+            <a href=""><i class="fa-brands fa-twitter text-xl"></i></a>
+          </div>
+        </div>
+        <div class="w-full md:w-2/3 p-5 md:p-10 border-2 border-gray-700 rounded-2xl drop-shadow-xl mt-8 md:mt-0">
+          <h4 class="font-bold text-2xl">Send a Message</h4>
+          <!-- form -->
+          <form class="space-y-10">
+            <div class="grid md:grid-cols-2 gap-4 py-5">
+              <div class="">
+                <label for="username" class="text-gray-200">Name</label>
+                <input
+                  class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label for="email" class="text-gray-200">Email</label>
+                <input
+                class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="text-gray-200">Subject</label>
+              <input
+              class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Message subject"
+              />
+            </div>
+            <div>
+              <label for="message" class="text-gray-200">Message</label>
+            <textarea
+            class="w-full p-2 rounded-xl border border-gray-600 bg-blue-900 bg-opacity-10 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:placeholder-gray-400"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Enter your message"
+            ></textarea>
+            </div>
+            <button class="w-full bg-gradient-to-r from-indigo-600 to-cyan-400 hover:from-cyan-400 hover:to-indigo-400 px-6 py-2 rounded-full hover:bg-blue-600" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--footer -->
+    <section class="bg-white">
+      <div class="w-full md:flex justify-start px-6 md:px-28 py-10">
+        <div class="text-start flex flex-col justify-start gap-4">
+          <h5
+            class="text-4xl font-bold bg-gradient-to-b from-teal-400 to-cyan-400 text-transparent bg-clip-text"
+          >
+            Shoaib ur Rehman
+          </h5>
+          <p class="break-words">
+            Full-stack developer specializing in <br />
+            modern React applications and responsive <br />
+            web experiences.
+          </p>
+          <div class="flex justify-start items-center">
+            <i class="fa-brands fa-github mr-3"></i>
+            <i class="fa-brands fa-linkedin-in mx-3"></i>
+            <i class="fa-brands fa-twitter mx-3"></i>
+            <i class="fa-solid fa-envelope mx-3"></i>
+          </div>
+        </div>
+        <div class="mt-8 md:mx-28">
+          <h4 class="font-bold text-2xl">Quick Links</h4>
+          <ul class="space-y-2 mt-3">
+            <li class="hover:text-teal-500"><a href="/">Home</a></li>
+            <li class="hover:text-teal-500"><a href="#about">About</a></li>
+            <li class="hover:text-teal-500"><a href="#services">Service</a></li>
+            <li class="hover:text-teal-500"><a href="#projects">Porject</a></li>
+            <li class="hover:text-teal-500"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mt-8 md:ml-32">
+          <h4 class="font-bold text-2xl">Contact</h4>
+          <p>Email: shoaib@example.com</p>
+          <p>Location: City, Country</p>
+        </div>
+      </div>
+      <hr />
+      <div class="py-4 px-6">
+        <p class="text-center">
+          &copy;2025 Shoaib ur Rehman Portfolio. All rights reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
+
+
+

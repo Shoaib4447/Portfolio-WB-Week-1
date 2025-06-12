@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="">
+    <!-- header -->
+    <div
+      class="sticky top-0 bg-white flex justify-around flex-wrap gap-3 md:gap-0 text-center p-4 text-sm font-medium shadow-xl border-b-4 border-black-300"
+    >
+      <div>Total Tasks: <span id="total-tasks">0</span></div>
+      <div>Completed: <span id="completed-tasks">0</span></div>
+      <div>Pending: <span id="pending-tasks">0</span></div>
+      <div>High Priority: <span id="high-priority">0</span></div>
+    </div>
+    <!-- main container -->
+    <div
+      class="bg-gradient-to-br from-[#4B79A1] via-blue-300 to-[#283E51] p-5 md:p-10 flex justify-center items shadow-md"
+    >
+      <!-- content container -->
+      <div class="min-h-screen container bg-white rounded-2xl md:mx-20 py-5">
+        <!-- heading -->
+        <h1 class="text-center font-bold text-4xl mt-4">My To-Do List</h1>
+        <!-- form -->
+        <form id="task-form">
+          <!-- Enter Task -->
+          <div class="p-5 mx-4">
+            <input
+              id="task-input"
+              class="w-full p-4 outline-none ring-1 ring-gray-300 rounded-md"
+              type="text"
+              placeholder="Enter a new task"
+            />
+            <!-- Date - Priority - Add Task Button -->
+            <div class="md:flex gap-3 justify-around mt-4 md:p-2 space-y-2">
+              <input
+                class="w-full p-2 outline-none ring-1 ring-gray-300"
+                type="date"
+                id="task-date"
+              />
+              <select
+                id="task-priority"
+                name="country"
+                class="w-full p-2 outline-none ring-1 ring-gray-300"
+              >
+                <option value="">--Priority--</option>
+                <option value="urgent">Urgent</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+              <button
+                class="w-full md:w bg-blue-400 text-white text-2xl rounded"
+                type="submit"
+              >
+                Add Task
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!--    filters -->
+        <div class="flex justify-center flex-wrap gap-4 text-white">
+          <button
+            class="filter-btn px-4 py-2 text-white rounded-md text-sm font-medium bg-gray-400 hover:bg-teal-400"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn text-gray-400 px-4 py-2 rounded-md text-sm font-medium bg-gray-200 hover:bg-teal-400 hover:text-white"
+            data-filter="completed"
+          >
+            Completed
+          </button>
+          <button
+            class="filter-btn text-gray-400 px-4 py-2 rounded-md text-sm font-medium bg-gray-200 hover:bg-teal-400 hover:text-white"
+            data-filter="pending"
+          >
+            Pending
+          </button>
+          <button
+            class="filter-btn text-gray-400 px-4 py-2 rounded-md text-sm font-medium bg-gray-200 hover:bg-teal-400 hover:text-white"
+            data-filter="priority"
+          >
+            Priority
+          </button>
+        </div>
+
+        <!-- Task list -->
+        <div class="container mt-4 p-8">
+          <ul id="task-list" class="space-y-2">
+            <!-- Task will be added here using JS -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Js Script -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
